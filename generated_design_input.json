@@ -1,0 +1,37 @@
+{
+  "device_type": "bragg_stack",
+  "lambda0_nm": 1200.0,
+  "wavelength_range_nm": [
+    600,
+    1400
+  ],
+  "materials": [
+    {
+      "name": "TiO2",
+      "n": 2.4
+    },
+    {
+      "name": "Al2O3",
+      "n": 1.76
+    }
+  ],
+  "structure": {
+    "periods": 10,
+    "d1_nm": 126.28885140844265,
+    "d2_nm": 164.45262249276163,
+    "order": "HL"
+  },
+  "optical_conditions": {
+    "incident_angle_deg": 0,
+    "polarization": "TE"
+  },
+  "optimization": {
+    "method": "bayesian",
+    "trials": 40
+  },
+  "targets": {
+    "max_center_error_nm": 5,
+    "min_bandgap_width_nm": 200,
+    "max_minT": 0.2
+  }
+}

@@ -1,0 +1,28 @@
+DEFAULT_DESIGN = {
+    "device_type": "bragg_stack",
+    "lambda0_nm": 1000,
+    "wavelength_range_nm": [600, 1400],
+    "materials": [
+        {"name": "SiO2", "n": 1.45},
+        {"name": "TiO2", "n": 2.4}
+    ],
+    "structure": {
+        "periods": 10,
+        "d1_nm": 150.0,
+        "d2_nm": 100.0,
+        "order": "HL"
+    },
+    "optical_conditions": {
+        "incident_angle_deg": 0,
+        "polarization": "TE"
+    },
+    "optimization": {
+        "method": "bayesian",
+        "trials": 40
+    },
+    "targets": {
+        "max_center_error_nm": 5,
+        "min_bandgap_width_nm": 200,
+        "max_minT": 0.2
+    }
+}
